@@ -7,8 +7,8 @@ public class SuperSubCatch {
             int b = 42 / a;
         } catch (Exception e) {
             System.out.println("Перехват исключений общего класса Exception.");
-        } catch (ArithmeticException e) {
+        } /*catch (ArithmeticException e) {
             System.out.println("Этот код вообще недостижим.");
-        }
+        }*/
     }
 }
