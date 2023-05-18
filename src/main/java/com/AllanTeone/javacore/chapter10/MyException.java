@@ -10,6 +10,7 @@ public class MyException  extends Exception {
     public String toSTring() {
         return "MyException[" + detail + "]";
     }
+}
 
     class ExceptionDemo {
         static void compute(int a) throws MyException {
@@ -28,4 +29,4 @@ public class MyException  extends Exception {
             }
         }
     }
-}
+
