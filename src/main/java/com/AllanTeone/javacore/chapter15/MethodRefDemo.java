@@ -1,6 +1,6 @@
 package main.java.com.AllanTeone.javacore.chapter15;
 
-interface StringFunc {
+/*interface StringFunc {
     String func(String string);
 }
 class MyStringOps {
@@ -29,4 +29,4 @@ class MyStringOps {
          System.out.println("Исходная строка: " + inStr);
          System.out.println("Обращенная строка: " + outStr);
      }
-}
+}*/
