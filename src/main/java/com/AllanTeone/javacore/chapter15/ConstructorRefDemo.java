@@ -1,5 +1,5 @@
 package main.java.com.AllanTeone.javacore.chapter15;
-
+/*
 interface MyFunc {
     MyClass func(int n);
 }
@@ -23,3 +23,4 @@ public class ConstructorRefDemo {
         System.out.println("Значение val в обьекте mc равно " + mc.getVal());
     }
 }
+*/
