@@ -1,5 +1,5 @@
 package main.java.com.AllanTeone.javacore.chapter15;
-
+/*
 interface  MyFunc {
     int func(int n);
 }
@@ -14,3 +14,4 @@ public class VarCapture {
         //num = 9;
     }
 }
+*/
