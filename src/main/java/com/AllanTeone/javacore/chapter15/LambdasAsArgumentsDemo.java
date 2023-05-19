@@ -1,6 +1,6 @@
 package main.java.com.AllanTeone.javacore.chapter15;
 
-interface StringFunc {
+/*interface StringFunc {
     String func(String n);
 }
 
@@ -43,4 +43,4 @@ public class LambdasAsArgumentsDemo {
 
         System.out.println("Это обращенная строка: " + stringOp(reverse, inStr));
     }
-}
+}*/
