@@ -5,7 +5,7 @@ import java.io.*;
 public class ByteArrayOutputStreamDemo {
     public static void main(String[] args) {
         ByteArrayOutputStream f = new ByteArrayOutputStream();
-        String s = "This text";
+        String s = "ByteArrayOutputStreamDemo";
         byte buf[] = s.getBytes();
 
         try {
