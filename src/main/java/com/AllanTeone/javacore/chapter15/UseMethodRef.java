@@ -1,5 +1,5 @@
 package main.java.com.AllanTeone.javacore.chapter15;
-
+/*
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -34,3 +34,4 @@ public class UseMethodRef {
     }
 
 }
+*/

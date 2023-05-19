@@ -1,5 +1,5 @@
 package main.java.com.AllanTeone.javacore.chapter15;
-
+/*
 interface MyFunc<T> {
     int func(T[] vals, T v);
 }
@@ -32,3 +32,4 @@ public class GenericMethodRefDemo {
         System.out.println("Массив vals содержит " + count + " числа два");
     }
 }
+*/
