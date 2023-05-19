@@ -1,6 +1,6 @@
 package main.java.com.AllanTeone.javacore.chapter15;
 
-interface StringFunc {
+/*interface StringFunc {
     String func(String n);
 }
 public class BlockLambdaDemo2 {
@@ -17,4 +17,4 @@ public class BlockLambdaDemo2 {
         System.out.println("Лямбда обращается на " + reverse.func("Лямбда"));
         System.out.println("Выражение обращается на " + reverse.func("Выражение"));
     }
-}
+}*/
