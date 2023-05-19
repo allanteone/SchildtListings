@@ -1,5 +1,5 @@
 package main.java.com.AllanTeone.javacore.chapter15;
-
+/*
 interface MyFunc<T> {
     boolean func(T v1, T v2);
 }
@@ -54,3 +54,4 @@ public class InstanceMethWithObjectRefDemo {
         System.out.println("Дней, когда максимальная температура была меньше 19: " + count);
     }
 }
+*/
