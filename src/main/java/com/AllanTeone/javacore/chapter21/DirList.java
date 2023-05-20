@@ -8,6 +8,13 @@ public class DirList {
     public static void main(String[] args) {
         String dirname = "MyDir";
 
+        DirectoryStream.Filter<Path> how = new DirectoryStream.Filter<Path>() {
+            public boolean accept(Path filename) throws IOException {
+                if (Files.isWritable(filename)) return true;
+                return false;
+            }
+        };
+
         try (DirectoryStream<Path> dirstrm = Files.newDirectoryStream(Paths.get(dirname)))
         {
             System.out.println("Каталог: " + dirname);
