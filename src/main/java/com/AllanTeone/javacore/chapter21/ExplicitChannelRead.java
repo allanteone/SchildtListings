@@ -8,16 +8,8 @@ import java.nio.file.*;
 public class ExplicitChannelRead {
     public static void main(String[] args) {
         int count;
-        Path filepath = null;
 
-        try {
-            filepath = Paths.get("test.txt");
-        } catch (InvalidPathException e) {
-            System.out.println("Path Error " + e);
-            return;
-        }
-
-        try (SeekableByteChannel fChan = Files.newByteChannel(filepath))
+        try (SeekableByteChannel fChan = Files.newByteChannel(Paths.get("test.txt")))
         {
             ByteBuffer mBuf = ByteBuffer.allocate(128);
 
@@ -31,8 +23,11 @@ public class ExplicitChannelRead {
                         System.out.print((char) mBuf.get());
                 }
             } while (count != -1);
-
             System.out.println();
+
+        } catch (InvalidPathException e) {
+            System.out.println("Path Error " + e);
+            return;
         } catch (IOException e) {
             System.out.println("Ошибка ввода-вывода " + e);
         }
