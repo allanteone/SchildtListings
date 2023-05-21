@@ -1,8 +1,6 @@
 package main.java.com.AllanTeone.javacore.chapter29;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
