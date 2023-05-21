@@ -1,10 +1,11 @@
 package main.java.com.AllanTeone.javacore.chapter29;
 
-import javax.naming.Name;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
-/*
+
 class NamePhoneEmail {
     String name;
     String phonenum;
@@ -27,7 +28,7 @@ class NamePhone {
     }
 }
 
-public class StreamDemo5 {
+public class StreamDemo7 {
     public static void main(String[] args) {
         ArrayList<NamePhoneEmail> myList = new ArrayList<>();
 
@@ -35,17 +36,23 @@ public class StreamDemo5 {
         myList.add(new NamePhoneEmail("Джеймс", "555-4444", "James@HerbSchildt.com"));
         myList.add(new NamePhoneEmail("Мэри", "555-3333", "Mary@HerbSchildt.com"));
 
-        System.out.println("Исходные элементы из списка myList: ");
-        myList.stream().forEach((a) -> {
-            System.out.println(a.name + " " + a.phonenum + " " + a.email);
-        });
-        System.out.println();
         Stream<NamePhone> nameAndPhone = myList.stream().map((a) -> new NamePhone(a.name, a.phonenum));
 
-        System.out.println("Список имен и номеров телефонов: ");
-        nameAndPhone.forEach((a) -> {
-            System.out.println(a.name + " " + a.phonenum);
-        });
+        List<NamePhone> npList = nameAndPhone.collect(Collectors.toList());
+
+        System.out.println("Имена и номера телефонов в списке типа List:");
+        for(NamePhone e : npList)
+            System.out.println(e.name + ": " + e.phonenum);
+
+        nameAndPhone = myList.stream().map((a) -> new NamePhone(a.name, a.phonenum));
+        Set<NamePhone> npSet = nameAndPhone.collect(Collectors.toSet());
+        System.out.println("\nИмена и номера телефонов в множестве типа Set:");
+        for (NamePhone e : npSet)
+            System.out.println(e.name + ": " + e.phonenum);
+
     }
+
+
+
+
 }
-*/
